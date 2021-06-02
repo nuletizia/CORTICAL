@@ -9,7 +9,7 @@ The paper presents two new discriminative mutual information estimators, i-DIME 
 On top of DIME, a cooperative framework (CORTICAL) is discussed to estimate the channel capacity using a combined generator/discriminator model. The official implementations are now available.
 
 
--- DIME --
+<h2> DIME </h2>
 
 If you want to train and test your own i-DIME model and compare its performance with our results for the 2-d Gaussian case
 
@@ -24,8 +24,7 @@ If you want to train and test your own d-DIME model and compare its performance 
 Output is a .mat file containing both the <img src="https://latex.codecogs.com/gif.latex?\hat{I}_{dDIME}" /> and the <img src="https://latex.codecogs.com/gif.latex?\tilde{I}_{dDIME}" /> estimators, see the paper for more details.
 
 
--- CORTICAL --
-
+<h2> CORTICAL </h2>
 
 If you want to train your own CORTICAL model and compare its performance with our results
 
