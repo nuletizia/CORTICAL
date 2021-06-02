@@ -3,7 +3,7 @@ Keras implementation of cooperative capacity learning (CORTICAL)
 
 If you used the repository for your experiments, please cite the paper.
 
-<img src="https://github.com/nuletizia/CORTICAL/blob/master/teaser.jpg" width=700>
+<img src="https://github.com/nuletizia/CORTICAL/blob/master/teaser.jpg">
 
 The paper presents two new discriminative mutual information estimators, i-DIME and d-DIME. 
 On top of DIME, a cooperative framework (CORTICAL) is discussed to estimate the channel capacity using a combined generator/discriminator model. The official implementations are now available.
