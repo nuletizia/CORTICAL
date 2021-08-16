@@ -1,7 +1,8 @@
 # CORTICAL
 This repository contains the official Keras implementation of cooperative capacity learning (CORTICAL)
 
-If you used the repository for your experiments, please cite the paper.
+If you used the repository for your experiments, please cite our paper: https://arxiv.org/abs/2107.03084
+
 
 <img src="https://github.com/nuletizia/CORTICAL/blob/main/teaser.jpg" width=800>
 
