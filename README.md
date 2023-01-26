@@ -3,9 +3,12 @@ This repository contains the official Keras implementation of cooperative channe
 
 If you used the repository for your experiments, please cite the paper.
 
-<img src="https://github.com/nuletizia/CORTICAL/blob/main/cortical_teaser.png" width=800>
 
 The paper presents a cooperative framework (CORTICAL) to both estimate the channel capacity and sample from the capacity-achieving distribution using a combined generator/discriminator model. The official implementation is now available.
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/cortical_teaser.png" width=600>
+<em>Example of capacity learning in the case of an AWGN channel (d=2) under peak-power constraint (P=10)</em>
+
 
 <h2> CORTICAL training commands</h2>
 
@@ -22,3 +25,8 @@ To modify the value of the power constraint, manually modify the functions defin
 Output is a series of .mat files. Every 1000 epochs a batch of generated input channels samples is saved. When the execution terminates, estimates of the channel capacity and samples from the optimal (if well trained) input distribution are provided. 
 
 The code has been tested on Python 3.6 with Tensorflow 1.15.2 and Keras 2.2.4. Please adjust libraries and dependencies based on your system.
+
+<h2> CORTICAL results</h2>
+The following gifs show how CORTICAL learns the capacity-achieving distribution over time for different type of channels and power constraints.
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_1.gif">
