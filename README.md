@@ -26,8 +26,21 @@ Output is a series of .mat files. Every 1000 epochs a batch of generated input c
 
 The code has been tested on Python 3.6 with Tensorflow 1.15.2 and Keras 2.2.4. Please adjust libraries and dependencies based on your system.
 
-<h2> CORTICAL results</h2>
+<h2> CORTICAL training evolution</h2>
 
 The following gifs show how CORTICAL learns the capacity-achieving distribution over time for different type of channels and power constraints.
 
 <img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_1.gif">
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_4.gif">
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_8.gif">
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_16.gif">
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_20.gif">
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/2d_gaussian_channel_max_10.gif">
+
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_cauchy_channel_max_log4.gif">
+
