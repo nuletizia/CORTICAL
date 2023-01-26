@@ -1,36 +1,24 @@
 # CORTICAL
-This repository contains the official Keras implementation of cooperative capacity learning (CORTICAL)
+This repository contains the official Keras implementation of cooperative channel capacity learning (CORTICAL)
 
-If you used the repository for your experiments, please cite our paper: https://arxiv.org/abs/2107.03084
-
+If you used the repository for your experiments, please cite the paper.
 
 <img src="https://github.com/nuletizia/CORTICAL/blob/main/teaser.jpg" width=800>
 
-The paper presents two new discriminative mutual information estimators, i-DIME and d-DIME. 
-On top of DIME, a cooperative framework (CORTICAL) is discussed to estimate the channel capacity using a combined generator/discriminator model. The official implementations are now available.
+The paper presents a cooperative framework (CORTICAL) to both estimate the channel capacity and sample from the capacity-achieving distribution using a combined generator/discriminator model. The official implementation is now available.
 
-
-<h2> DIME </h2>
-
-If you want to train and test your own i-DIME model and compare its performance with our results for the 2-d Gaussian case
-
-> python iDIME.py --batch_size 512 --epochs 5000 --test_size 10000
-
-Output is a .mat file containing the <img src="https://latex.codecogs.com/gif.latex?\hat{I}_{iDIME}" /> estimator, see the paper for more details.
-
-If you want to train and test your own d-DIME model and compare its performance with our results for the 2-d Gaussian case
-
-> python dDIME.py --batch_size 512 --epochs 5000 --test_size 10000 --alpha 0.1
-
-Output is a .mat file containing both the <img src="https://latex.codecogs.com/gif.latex?\hat{I}_{dDIME}" /> and the <img src="https://latex.codecogs.com/gif.latex?\tilde{I}_{dDIME}" /> estimators, see the paper for more details.
-
-
-<h2> CORTICAL </h2>
+<h2> CORTICAL training commands</h2>
 
 If you want to train your own CORTICAL model and compare its performance with our results
 
-> python CORTICAL.py --batch_size 512 --epochs 500 --test_size 10000 --alpha 0.1
+> python CORTICAL.py 
 
-Output is a .mat file containing both the <img src="https://latex.codecogs.com/gif.latex?\hat{I}_{dDIME}" /> and the <img src="https://latex.codecogs.com/gif.latex?\tilde{I}_{dDIME}" />  estimators and the channel input-output samples, see the paper for more details.
+A variety of input arguments, e.g., type of channel or type of power constraint, is offered. Please check the arguments of CORTICAL.py for more details. Use the following command to include them
 
-To analyize the discrete input cases, modify the variable "noise_real" according to your input distribution and modify the "latent_dim" and "data_dim" variables. In the discrete case, they are related with the code rate.
+> python CORTICAL.py --batch_size 512 --epochs 500 --test_size 10000 --dim 1 --channel 'AWGN' --power_constraint 'PP'
+
+To modify the value of the power constraint, manually modify the functions defined outside the CORTICAL class.
+
+Output is a series of .mat files. Every 1000 epochs a batch of generated input channels samples is saved. When the execution terminates, estimates of the channel capacity and samples from the optimal (if well trained) input distribution are provided. 
+
+The code has been tested on Python 3.6 with Tensorflow 1.15.2 and Keras 2.2.4. Please adjust libraries and dependencies based on your system.
