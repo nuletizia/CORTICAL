@@ -30,4 +30,4 @@ The code has been tested on Python 3.6 with Tensorflow 1.15.2 and Keras 2.2.4. P
 
 The following gifs show how CORTICAL learns the capacity-achieving distribution over time for different type of channels and power constraints.
 
-<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_1.gif", width=400>
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/gifs/scalar_gaussian_channel_max_1.gif">
