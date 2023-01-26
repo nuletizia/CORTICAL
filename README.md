@@ -3,7 +3,7 @@ This repository contains the official Keras implementation of cooperative channe
 
 If you used the repository for your experiments, please cite the paper.
 
-<img src="https://github.com/nuletizia/CORTICAL/blob/main/teaser.jpg" width=800>
+<img src="https://github.com/nuletizia/CORTICAL/blob/main/cortical_teaser.png" width=800>
 
 The paper presents a cooperative framework (CORTICAL) to both estimate the channel capacity and sample from the capacity-achieving distribution using a combined generator/discriminator model. The official implementation is now available.
 
