@@ -1,7 +1,9 @@
 # CORTICAL
 This repository contains the official Keras implementation of cooperative channel capacity learning (CORTICAL)
 
-If you used the repository for your experiments, please cite the paper.
+If you used the repository for your experiments, please cite the paper:
+
+*N. A. Letizia, A. M. Tonello and H. V. Poor, "Cooperative Channel Capacity Learning," in IEEE Communications Letters, vol. 27, no. 8, pp. 1984-1988, Aug. 2023, doi: 10.1109/LCOMM.2023.3282307.*
 
 
 The paper presents a cooperative framework (CORTICAL) to both estimate the channel capacity and sample from the capacity-achieving distribution using a combined generator/discriminator model. The official implementation is now available.
